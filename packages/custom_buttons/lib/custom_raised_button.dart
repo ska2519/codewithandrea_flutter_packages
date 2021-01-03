@@ -1,6 +1,5 @@
 part of custom_buttons;
 
-@immutable
 class CustomRaisedButton extends StatelessWidget {
   const CustomRaisedButton({
     Key key,
@@ -50,8 +49,9 @@ class CustomRaisedButton extends StatelessWidget {
           ),
         ), // height / 2
         color: color,
-        disabledColor: color,
+        disabledColor: disableColor,
         textColor: textColor,
+        disabledTextColor: disableTextColor,
         onPressed: onPressed,
       ),
     );
