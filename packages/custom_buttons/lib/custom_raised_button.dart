@@ -6,7 +6,9 @@ class CustomRaisedButton extends StatelessWidget {
     Key key,
     @required this.child,
     this.color,
+    this.disableColor,
     this.textColor,
+    this.disableTextColor,
     this.height = 50.0,
     this.borderRadius = 4.0,
     this.loading = false,
@@ -14,7 +16,9 @@ class CustomRaisedButton extends StatelessWidget {
   }) : super(key: key);
   final Widget child;
   final Color color;
+  final Color disableColor;
   final Color textColor;
+  final Color disableTextColor;
   final double height;
   final double borderRadius;
   final bool loading;
